@@ -1,0 +1,22 @@
+
+body {
+  background-color: white;
+  font: 1em/1.4 sans-serif;
+}
+
+.content {
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  background-color: black;
+  margin: 0 auto;
+}
+
+.item {
+  background-color: gray;
+  color: white;
+}

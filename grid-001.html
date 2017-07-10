@@ -2,36 +2,95 @@
 <html>
   <head>
     <title></title>
-    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="styles/base.css" />
     <style type="text/css">
       .container {
-        width: 300px;
-        height: 600px;
+        width: 450px;
+        height: 450px;
         border: 1px solid #000;
 
-        grid-column-templates: 1fr 1fr 1fr;
+        grid-template-columns: 95px 15px 285px 15px 40px;
+        grid-template-rows: 125px 30px 150px 15px 55px 20px 55px;
+
+        grid-column-gap: 0;
+        grid-row-gap: 0;
       }
 
-      .a {
-        height: 20px;
+      .a1 {
+        background-color: white;
+        grid-column-start: 1;
+        grid-row-start: 1;
+      }
+      .a2 {
+        background-color: black;
+        grid-row-start: 1;
+        grid-row-end: span 7;
+      }
+      .a3 {
+        background-color: red;
+        grid-column-start: 3;
+        grid-column-end: span 3;
+        grid-row-start: 1;
+        grid-row-end: span 3;
+      }
+      .b1 {
+        background-color: black;
+      }
+      .c1 {
+        background-color: white;
+      }
+      .d1 {
+        background-color: black;
+      }
+      .d3 {
+        background-color: black;
+        grid-column-start: 3;
+        grid-column-end: span 3;
+      }
+      .e1 {
+        background-color: blue;
+        grid-row-start: 5;
+        grid-row-end: span 3;
+      }
+      .e3 {
+        background-color: white;
+        grid-row-start: 5;
+        grid-row-end: span 3;
+      }
+      .e4 {
+        background-color: black;
+        grid-row-start: 5;
+        grid-row-end: span 3;
+      }
+      .e5 {
+        background-color: white;
+      }
+      .f5 {
+        background-color: black;
+      }
+      .g5 {
+        background-color: yellow;
       }
     </style>
   </head>
   <body>
-
-    <div class="container">
-      <div class="box a">A</div>
-      <div class="box b">B</div>
-      <div class="box c">C</div>
-      <div class="box d">D</div>
-      <div class="box e">E</div>
-      <div class="box f">F</div>
-      <div class="box g">G</div>
-      <div class="box h">H</div>
-      <div class="box i">I</div>
-      <div class="box j">J</div>
-      <div class="box k">K</div>
+    <div class="content">
+      <div class="container">
+        <div class="item a1"></div>
+        <div class="item a2"></div>
+        <div class="item a3"></div>
+        <div class="item b1"></div>
+        <div class="item c1"></div>
+        <div class="item d1"></div>
+        <div class="item d3"></div>
+        <div class="item e1"></div>
+        <div class="item e3"></div>
+        <div class="item e4"></div>
+        <div class="item e5"></div>
+        <div class="item f5"></div>
+        <div class="item g5"></div>
+      </div>
+      <p><a href="https://www.google.com/culturalinstitute/beta/asset/-/xwERWaqDyIcZ9w?hl=en">Composition with Red, Blue and Yellow</a></p>
     </div>
-
   </body>
 </html>
